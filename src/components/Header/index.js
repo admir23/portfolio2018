@@ -2,31 +2,18 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
+  <div class="home" id="menu-btn" onclick="toggleMenu()">
+    <div class="menu-icon">
+      <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
+    <section id="menu">
+      <nav>
+        <Link to="/index/">Home</Link>
+        <Link to="/about/">About</Link>
+        <Link to="/portfolio/">Portfolio</Link>
+        <Link to="/contact/">Contact</Link>
+      </nav>
+    </section>
   </div>
 )
 

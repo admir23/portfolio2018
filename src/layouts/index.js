@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import '../scss/main.scss';
 import '../utils/typography.js';
+
 
 import Header from '../components/Header'
 import './index.css'
